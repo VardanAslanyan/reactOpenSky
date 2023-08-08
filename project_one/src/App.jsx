@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 class App extends React.Component {
   render() {
     return (
-      <div id="doc3" className="yui-t7">
+      <div id="app">
         <Free />
         <div id="bd">
           <Content />

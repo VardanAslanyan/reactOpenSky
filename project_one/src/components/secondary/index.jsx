@@ -1,11 +1,10 @@
 import React from "react";
+import './style.css'
 
 class Secondery extends React.Component {
   render() {
     return (
-      <div class="yui-b">
         <div id="secondary">Secondary Column</div>
-      </div>
     );
   }
 }
