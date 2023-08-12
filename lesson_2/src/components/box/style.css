@@ -1,6 +1,5 @@
 .my-icons{
     transition: 0.3s;
-    color: #61dafb;
     font-size: 90px;
     width: 320px;
     height: 120px;
@@ -13,13 +12,13 @@
 
 .box-content{
     margin: 10px 10px 10px 0px;
-
     max-width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
+    color: white;
 }
 
 
