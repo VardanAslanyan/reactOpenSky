@@ -1,0 +1,29 @@
+.my-icons{
+    transition: 0.3s;
+    color: #61dafb;
+    font-size: 90px;
+    width: 320px;
+    height: 120px;
+    padding-top: 60px;
+}
+
+.my-icons:hover{
+    color: #e74c3c;
+}
+
+.box-content{
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.box-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 730px;
+
+}

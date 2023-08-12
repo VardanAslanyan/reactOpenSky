@@ -15,11 +15,11 @@ class Nav extends React.Component {
 class Header extends React.Component {
   state = {
     list: [
-      { name: "HOME", url: "https://google.com" },
-      { name: "ABOUT US", url: 'https://google.com'},
-      { name: "SREVICES", url: 'https://google.com'},
-      { name: "GALLERY", url: 'https://google.com'},
-      { name: "CONTACT", url: 'https://google.com'},
+      { title: "HOME", url: "https://google.com" },
+      { title: "ABOUT US", url: 'https://google.com'},
+      { title: "SREVICES", url: 'https://google.com'},
+      { title: "GALLERY", url: 'https://google.com'},
+      { title: "CONTACT", url: 'https://google.com'},
     ],
   };
   render() {
@@ -30,7 +30,7 @@ class Header extends React.Component {
         </logo>
         <ul>
           {this.state.list.map((item, index) => {
-            return <Nav key={index} title={item.name} url={item.url} />;
+            return <Nav key={index} title={item.title} url={item.url} />;
           })}
         </ul>
       </header>
