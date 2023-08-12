@@ -4,11 +4,15 @@
     width: 320px;
     height: 120px;
     padding-top: 60px;
+
+    &:hover {
+            color:burlywood;
+    }
 }
 
-.my-icons:hover{
-    color:burlywood;
-}
+// .my-icons:hover{
+//     color:burlywood;
+// }
 
 .box-content{
     margin: 10px 10px 10px 0px;
