@@ -1,0 +1,19 @@
+.address-input {
+    margin: 15px auto;
+}
+
+.address-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+
+.address {
+    width: 230px;
+    margin-top: 10px;
+
+    input {
+        width: 235px;
+    }
+}
