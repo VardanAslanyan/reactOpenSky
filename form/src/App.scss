@@ -3,7 +3,8 @@
   min-height: 300px;
   margin: 50px auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: aqua;
+  flex-wrap: wrap;
+  padding: 30px 60px;
+  gap: 20px;
 }
