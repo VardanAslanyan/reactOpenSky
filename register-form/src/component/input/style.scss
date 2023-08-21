@@ -1,0 +1,94 @@
+.login {
+  width: 100%;
+  background-color:darkgoldenrod;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  &:hover {
+    background-color: burlywood;
+    cursor: pointer;
+  }
+}
+
+
+.register {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 60px;
+  gap: 20px;
+
+  .header {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+}
+
+
+.G-input {
+    width: 100%;
+    // position: relative;
+  
+    label {
+      display: block;
+      width: 100%;
+      position: relative;
+
+      .my-icon {
+        position: absolute;
+        right:10px;
+        bottom: 10px;
+      }
+  
+      input {
+        width: 100%;
+        height: 35px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 0 15px;
+        color: white;
+        background-color: dimgray;
+      }
+    }
+  
+  
+    &.G-width-50 {
+      width: calc(50% - 10px);
+  
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  
+    &.G-width-33 {
+      width: calc(33.333% - 13.33px);
+      @media (max-width: 991px) {
+        width: calc(50% - 10px);
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  
+.signUp {
+  width: 100%;
+  height: 35px;
+  background-color:darkgoldenrod;
+  border: 4px solid olivedrab;
+  color: white;
+  &:hover {
+    background-color: burlywood;
+    cursor: pointer;
+  }
+}
+
+.test {
+  height: 10px;
+  width: 10px;
+}
+  
