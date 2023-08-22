@@ -10,11 +10,7 @@ class Input extends React.Component {
     let { togle } = this.state;
     let { type } = this.props;
     if (type === "password") {
-      if (!togle) {
-        this.setState({ togle: true });
-      } else {
-        this.setState({ togle: false });
-      }
+      this.setState({togle:!togle})
     }
   };
 
