@@ -10,13 +10,12 @@ class Input extends React.Component {
     let { togle } = this.state;
     let { type } = this.props;
     if (type === "password") {
-      this.setState({togle:!togle})
+      this.setState({ togle: !togle });
     }
   };
 
   render() {
-    const { type, placeholder, label, name, className, error} =
-      this.props;
+    const { type, placeholder, label, name, className, error } = this.props;
 
     return (
       <div className={className ? `${className} G-input` : "G-input"}>
@@ -28,7 +27,16 @@ class Input extends React.Component {
             name={name ? name : null}
             onChange={this.props.handleChange}
           />
-          {type ? <i onClick={this.togglePassword} className={`${type && this.state.togle? "icon-visibility": "icon-visibility_off"} my-icon`}></i> : null}
+          {type ? (
+            <i
+              onClick={this.togglePassword}
+              className={`${
+                type && this.state.togle
+                  ? "icon-visibility"
+                  : "icon-visibility_off"
+              } my-icon`}
+            ></i>
+          ) : null}
           {error ? <p className={"P-error"}>{error}</p> : null}
         </label>
       </div>
@@ -101,6 +109,7 @@ class Register extends React.Component {
       errors.passwordConfirm = "Confirm password field is required";
     }
     if (user.password !== user.passwordConfirm) {
+      isValidate = false;
       errors.passwordConfirm = "Should be the same as password";
     }
 
@@ -121,6 +130,18 @@ class Register extends React.Component {
     user[e.target.name] = e.target.value;
     errors[e.target.name] = "";
     this.setState({ user });
+  };
+
+  checkConfirmPassword = (e) => {
+    const { user, errors } = this.state;
+    user[e.target.name] = e.target.value;
+    errors[e.target.name] = "";
+    if (user.password !== user.passwordConfirm) {
+      errors.passwordConfirm = "Should be the same as password";
+    }
+
+    this.setState({ user });
+    this.setState({ errors });
   };
 
   render() {
@@ -165,7 +186,7 @@ class Register extends React.Component {
             type="password"
           />
           <Input
-            handleChange={this.handleChange}
+            handleChange={this.checkConfirmPassword}
             className="G-width-50"
             placeholder="Confirm Passpord*"
             name="passwordConfirm"

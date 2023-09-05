@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.P-error{
+  color: red;
+}
+
+body {
+  min-width: 500px;
+  background-color: darkgrey;
+}
