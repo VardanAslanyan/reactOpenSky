@@ -21,6 +21,9 @@
                 display: inline-block;
                 margin-right: 25px;
                 font-size: 25px;
+                a {
+                    text-decoration: none;
+                }
             }
         }
 
@@ -46,8 +49,8 @@
 
     }
 
-
-
-
-
 }
+
+.active {
+    color: green;
+  }

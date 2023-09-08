@@ -10,6 +10,7 @@ import Home6 from "../../assets/img/home06.jpg";
 import Home7 from "../../assets/img/home07.jpg";
 import Home8 from "../../assets/img/home08.jpg";
 import HomeUnder from "../../assets/img/homeunder.jpg";
+import { NavLink, Link } from "react-router-dom";
 
 class Home extends React.Component {
   state = {
