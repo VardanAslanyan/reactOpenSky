@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import UnderNavbar from "./components/underNuv";
 import Home from "./pages/home";
 import { Switch, Route } from "react-router-dom";
+import { routerNames } from "./router/router";
 
 class App extends React.Component {
   state = {
@@ -29,21 +30,21 @@ class App extends React.Component {
       <div className="App">
         <Navbar></Navbar>
         <Switch>
-          <Route exact path={"/home"} >
+          <Route exact path={routerNames.HOME} >
             <UnderNavbar
               h3Data={this.state.home.h3Data}
               pData={this.state.home.pData}
             />
             <Home />
           </Route>
-          <Route exact path={"/about"} >
+          <Route exact path={routerNames.ABOUT} >
             <UnderNavbar
               h3Data={this.state.about.h3Data}
               pData={this.state.about.pData}
             />
             <Home />
           </Route>
-          <Route exact path={"/contact"} >
+          <Route exact path={routerNames.CONTACT} >
             <UnderNavbar
               h3Data={this.state.contact.h3Data}
               pData={this.state.contact.pData}

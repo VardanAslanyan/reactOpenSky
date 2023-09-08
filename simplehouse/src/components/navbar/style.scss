@@ -16,7 +16,6 @@
             position: absolute;
             right: 10px;
             top: 25px;
-
             li {
                 display: inline-block;
                 margin-right: 25px;
@@ -54,3 +53,7 @@
 .active {
     color: green;
   }
+
+.unselected {
+    color: white
+}

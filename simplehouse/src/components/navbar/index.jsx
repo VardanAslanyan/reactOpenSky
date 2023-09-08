@@ -3,6 +3,7 @@ import "./style.scss";
 import NavImage from "../../assets/img/simple-house.jpg";
 import MainIcon from "../../assets/img/simple-house-logo.png";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { routerNames } from "../../router/router";
 
 class Navbar extends React.Component {
   render() {
@@ -26,9 +27,9 @@ class Navbar extends React.Component {
             </div>
             <div className="navbar-right">
               <ul>
-                <li><NavLink to='/home'>Home</NavLink></li>
-                <li><NavLink to='/about'>About</NavLink></li>
-                <li><NavLink to='/contact'>Contact</NavLink></li>
+                <li><NavLink exact className={isActive => (!isActive ? " unselected" : "")} to={routerNames.HOME}>Home</NavLink></li>
+                <li><NavLink exact className={isActive => (!isActive ? " unselected" : "")} to={routerNames.ABOUT}>About</NavLink></li>
+                <li><NavLink exact className={isActive => (!isActive ? " unselected" : "")} to={routerNames.CONTACT}>Contact</NavLink></li>
               </ul>
             </div>
           </div>
