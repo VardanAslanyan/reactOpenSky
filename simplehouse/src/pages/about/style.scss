@@ -1,0 +1,30 @@
+.about {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+}
+
+.person {
+    display: flex;
+    width: 530px;
+
+    .data {
+        margin-left: 15px;
+    }
+
+    h4 {
+        width: 330px;
+        color: #8BCAE4;
+    }
+    p {
+        margin-top: 20px;
+        width: 330px;
+    }
+    .title {
+        margin-top: 15px;
+        color: #CC3FB0;
+    }
+}

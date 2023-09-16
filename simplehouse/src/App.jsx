@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import UnderNavbar from "./components/underNuv";
 import Home from "./pages/home";
+import About from "./pages/about";
 import { Switch, Route } from "react-router-dom";
 import { routerNames } from "./router/router";
 
@@ -42,14 +43,13 @@ class App extends React.Component {
               h3Data={this.state.about.h3Data}
               pData={this.state.about.pData}
             />
-            <Home />
+            <About/>
           </Route>
           <Route exact path={routerNames.CONTACT} >
             <UnderNavbar
               h3Data={this.state.contact.h3Data}
               pData={this.state.contact.pData}
             />
-            <Home />
           </Route>
         </Switch>
       </div>
