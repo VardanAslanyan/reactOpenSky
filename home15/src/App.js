@@ -1,10 +1,12 @@
 import './App.css';
-import WH from './component/wh';
+import Ex2 from './component/ex2';
+// import WH from './component/wh';
 
 function App() {
   return (
     <div className="App">
-      <WH/>
+      {/* <WH/> */}
+      <Ex2/>
     </div>
   );
 }
