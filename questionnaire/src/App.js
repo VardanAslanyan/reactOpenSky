@@ -3,6 +3,7 @@ import {Routes, Route, Navigate, NavLink } from 'react-router-dom'
 import Answers from './conponents/answers';
 import Questions from './conponents/questions';
 import { routerNames } from './router/router'
+import Error404 from './conponents/error404';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <Routes>
         <Route path={routerNames.QUESTIONS_PATH} element={<Questions />} />
         <Route path={routerNames.ANSWERS_PATH} element={<Answers />} />
+
+        <Route path='/*' element={<Error404 />} />
 
         <Route path='/*' element={<Navigate to={routerNames.ERROR} />} />
       </Routes>
