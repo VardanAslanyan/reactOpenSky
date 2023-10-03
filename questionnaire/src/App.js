@@ -25,7 +25,7 @@ function App() {
         <Route path={routerNames.QUESTIONS_PATH} element={<Questions />} />
         <Route path={routerNames.ANSWERS_PATH} element={<Answers />} />
 
-        <Route path='/*' element={<Error404 />} />
+        <Route path={routerNames.ERROR} element={<Error404 />} />
 
         <Route path='/*' element={<Navigate to={routerNames.ERROR} />} />
       </Routes>
