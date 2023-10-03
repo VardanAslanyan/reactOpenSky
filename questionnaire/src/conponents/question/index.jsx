@@ -17,22 +17,22 @@ function Question({index, handleRadio}) {
       <div className="variants">
           <label htmlFor="">
             Variant 1
-            <input onClick={handleClick} type="radio" id={`${index} - 1`} name="answer" />
+            <input onClick={handleClick} type="radio" id={`${index} - 1`} name={`answer${index}`} />
             <textarea className="variant" />
           </label>
           <label htmlFor="">
             Variant 2
-            <input onClick={handleClick} type="radio" id={`${index} - 2`} name="answer"/>
+            <input onClick={handleClick} type="radio" id={`${index} - 2`} name={`answer${index}`}/>
             <textarea className="variant" />
           </label>
           <label htmlFor="">
             Variant 3
-            <input onClick={handleClick} type="radio" id={`${index} - 3`} name="answer"/>
+            <input onClick={handleClick} type="radio" id={`${index} - 3`} name={`answer${index}`}/>
             <textarea className="variant" />
           </label>
           <label htmlFor="">
             Variant 4
-            <input onClick={handleClick} type="radio" id={`${index} - 4`} name="answer"/>
+            <input onClick={handleClick} type="radio" id={`${index} - 4`} name={`answer${index}`}/>
             <textarea className="variant" />
           </label>
       </div>
