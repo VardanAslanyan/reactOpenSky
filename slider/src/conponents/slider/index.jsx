@@ -9,7 +9,6 @@ function Slider() {
     const [orderImages, setOrderImages] = useState(0)
 
     const handleClick = (next) => {
-        console.log(next);
         if(next === 'right') {
             if(orderImages < (images.length - 1)){
                 let count = orderImages
