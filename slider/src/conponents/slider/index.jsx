@@ -27,6 +27,11 @@ function Slider() {
     }
 
 
+    const handleClickOnImage = (index) => {
+        setOrderImages(index)
+    }
+
+
   return (
     <div className="slider">
         <div className="main-image">
@@ -37,7 +42,7 @@ function Slider() {
       <div className="all-images">
         {images.map((item, index) => (
           <div key={index} className="image-loop">
-            <img className={index===orderImages? 'selected': ''}  src={item} alt="" />
+            <img onClick={()=>{handleClickOnImage(index)}} className={index===orderImages? 'selected': ''}  src={item} alt="" />
           </div>
         ))}
       </div>
