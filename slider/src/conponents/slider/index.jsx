@@ -9,7 +9,7 @@ function Slider() {
     const [orderImages, setOrderImages] = useState(0)
 
     const handleClick = (next) => {
-        if(next === 'right') {
+        if(next) {
             if(orderImages < (images.length - 1)){
                 let count = orderImages
                 setOrderImages(count += 1)
@@ -35,9 +35,9 @@ function Slider() {
   return (
     <div className="slider">
         <div className="main-image">
-            <span onClick={()=>{ handleClick('left') }} className="icon-arrow-left left"/>
+            <span onClick={()=>{ handleClick(false) }} className="icon-arrow-left left"/>
             <img src={images[orderImages]} alt="" />
-            <span onClick={()=>{ handleClick('right') }} className="icon-arrow-right right"/>
+            <span onClick={()=>{ handleClick(true) }} className="icon-arrow-right right"/>
         </div>
       <div className="all-images">
         {images.map((item, index) => (
