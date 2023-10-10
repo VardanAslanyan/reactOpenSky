@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './style.scss';
 import axios from 'axios'
+import Loading from './../../assets/animation/Infinity.svg'
 
 function Comment() {
 
@@ -37,7 +38,7 @@ function Comment() {
                 <p className='com-body'>{item.body}</p>
                 </li>
         })
-    :<p>Loaging...</p>} 
+    :<img className='loading' src={Loading} alt=''/>} 
         </ul>
     </div>
   );
