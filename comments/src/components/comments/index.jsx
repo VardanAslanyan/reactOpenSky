@@ -7,21 +7,19 @@ function Comment() {
 
 
     const [commentData, setCommentData] = useState([])
-    const [toogle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(false)
 
     const getData = async () => {
+        setToggle(false)
         let result = await axios.get('https://jsonplaceholder.typicode.com/comments')
         let data = result.data
         setCommentData(data)
+        setToggle(true)
     }
 
 
     useEffect(()=> {
-        setToggle(false)
-        let result = getData()
-        if(result){
-            setToggle(true)
-        }
+        getData()
     }, [])
 
 
@@ -29,7 +27,7 @@ function Comment() {
   return (
     <div className="comment">
         <ul>
-        {toogle? commentData.filter((item, index) => {
+        {toggle? commentData.filter((item, index) => {
             return index <= 100
         }).map((item, index)=>{
             return <li key={index}>
