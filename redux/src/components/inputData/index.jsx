@@ -1,12 +1,12 @@
 import './style.scss';
 
-function InputData({label, type, handleChange, classNameID}) {
+function InputData({label, type, handleChange, classNameID, nameID, error}) {
   return (
     <div className="input-data">
-        <label>{label}
-            <input onChange={(e)=>handleChange(e.target.value, label)} type={type} className={classNameID}/>
+        <p className='G-error'>{error}</p>
+        <label><div>{label}</div>
+            <input onChange={(e)=>handleChange(e.target.value, nameID)} type={type} className={classNameID}/>
         </label>
-
     </div>
   );
 }
