@@ -3,7 +3,6 @@ import React from "react";
 
 import './style.scss'
 import { routerList } from "../../router/routerList";
-import Admin from '../../pages/admin'
 import { sideBar } from "../../router/routerList";
 
 
@@ -32,8 +31,6 @@ export function AuthComponents() {
                     return <Route key={index} path={item.path} element={item.component}/>
                 }) : null}
 
-                <Route path={routerList.auth.ADMIN} element={<Admin/>}></Route>
-                {/* <Route path={routerList.guest.GUSET_COMPONENT} element={<GuestComponents/>}></Route> */}
             </Routes>
         </div>
         </div>

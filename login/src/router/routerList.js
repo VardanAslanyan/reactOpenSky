@@ -7,7 +7,6 @@ import Users from "../pages/users"
 export const routerList = {
     guest: { LOGIN: '/', GUSET_COMPONENT: '/'},
     auth: {
-        ADMIN: '/admin',
         sidebar: {
             USERS: '/users',
             PRODUCTS: '/products',
