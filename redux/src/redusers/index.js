@@ -6,19 +6,17 @@ const initialState = {
 }
 
 export const usersReduser = (state = initialState, action) => {
-    // const findDup = state.data.filter((item, index) => item.email === action.payload.email)
-    // if (!findDup) {
-        switch (action.type) {
-            case resusersTypes.SET_REGISTER_DATA: {
-                console.log(state, action.payload);
+    switch (action.type) {
+        case resusersTypes.SET_REGISTER_DATA: {
+            const findDup = state.data.filter((item, index) => item.email === action.payload.email)
+            if (!findDup.length) {
                 return { ...state, data: [...state.data, action.payload] }
-            }
-            default: {
+            } else{
                 return state
             }
         }
-    // }
-
-    return state
-
+        default: {
+            return state
+        }
+    }
 }

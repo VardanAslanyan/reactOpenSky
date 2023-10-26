@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import InputData from "../../components/inputData";
 import "./style.scss";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { resusersTypes } from "../../redusers/redusersTypes";
 
 function Register() {
+
+  const usersList = useSelector(state=>state.data)
   const [loginForm, setLoginForm] = useState({
     name: "",
     lastName: "",
@@ -37,61 +39,13 @@ function Register() {
   };
 
   const handleChange = (value, nameID) => {
-    const data = { ...loginForm };
-    const errors = { ...errorMessage };
-    switch (nameID) {
-      case "name": {
-        data.name = value;
-        errors.name = "";
-        break;
-      }
-      case "lastName": {
-        data.lastName = value;
-        errors.lastName = "";
-        break;
-      }
-      case "position": {
-        data.position = value;
-        errors.position = "";
-        break;
-      }
-      case "email": {
-        data.email = value;
-        errors.email = "";
-        break;
-      }
-      case "password": {
-        data.password = value;
-        errors.password = "";
-        errors.passwordNotMatch = "";
-        break;
-      }
-      case "confirmPassword": {
-        data.confirmPassword = value;
-        errors.confirmPassword = "";
-        errors.passwordNotMatch = "";
-        break;
-      }
-      default:
-        setErrorMessage({
-          name: "",
-          lastName: "",
-          position: "",
-          email: "",
-          password: "",
-          confirmPassword: "",
-          passwordNotMatch: "",
-          emailValidate: "",
-        });
-    }
-    setLoginForm(data);
-    setErrorMessage(errors);
+    setErrorMessage({...errorMessage,[nameID]:''})
+    setLoginForm({...loginForm, [nameID]:value})
   };
 
-  // useEffect(() => {
-  //   console.log(errorMessage);
-  //   console.log(loginForm);
-  // }, [errorMessage, loginForm]);
+  useEffect(() => {
+    console.log(usersList)
+  }, [usersList]);
 
   const handleClick = () => {
     const errors = { ...errorMessage };
