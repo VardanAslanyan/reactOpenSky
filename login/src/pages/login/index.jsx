@@ -6,8 +6,10 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const handleClick = () => {
+    if(username.trim() && password.trim()) {
     localStorage.setItem('token', `${username}${password}`)
     window.location.reload()
+    }
   };
 
 
