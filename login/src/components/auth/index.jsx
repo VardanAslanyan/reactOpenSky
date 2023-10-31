@@ -30,7 +30,6 @@ export function AuthComponents() {
                 {sideBar.length ? sideBar.map((item, index) => {
                     return <Route key={index} path={item.path} element={item.component}/>
                 }) : null}
-
             </Routes>
         </div>
         </div>

@@ -1,0 +1,11 @@
+import './style.scss'
+
+function Contact(){
+    return(
+        <div className="Contact">
+            Contact
+        </div>
+    )
+}
+
+export default Contact

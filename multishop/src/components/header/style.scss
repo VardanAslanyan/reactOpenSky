@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    .MultiShop {
+        display: block;
+        margin-left: 50px;
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            .multi-icon {
+                color: #FFD333;
+                background-color: #3D464D;
+                padding: 0 5px;
+            }
+            .shop-icon {
+                color: #3D464D;
+                background-color: #FFD333;
+                padding: 0 5px;
+            }
+        }
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #3D464D;
+        padding: 20px 50px;
+        .navigation {
+            a {
+                text-decoration: none;
+                margin-left: 15px;
+                font-size: 18px;
+            }
+        }
+        .buy {
+            color: #FFD333;
+            .icon-nav {
+                margin-left: 20px;
+            }
+
+        }
+    }
+}
+
+.active {
+    color: #FFD333;
+}
+
+.inactive {
+    color: white;
+}
+
