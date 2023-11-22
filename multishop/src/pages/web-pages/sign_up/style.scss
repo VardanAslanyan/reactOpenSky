@@ -1,0 +1,30 @@
+.sign-up {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    .sign-in-box {
+        h3 {
+            font-size: 25px;
+            align-self: center;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 30%;
+        background-color: white;
+        padding: 20px 60px;
+        p {
+            font-size: 12px;
+            a {
+                text-decoration: none;
+                color: rgb(136, 136, 62);
+            }
+        }
+        .sign-in-btn {
+            background-color: yellow;
+            padding: 5px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+}

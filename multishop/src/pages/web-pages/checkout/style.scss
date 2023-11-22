@@ -1,0 +1,94 @@
+@import 'src/assets/style/variables.scss';
+
+.order-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.building-address {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title-buildind-address {
+        font-size: 25px;
+    }
+
+    .fill-address {
+        background-color: white;
+        padding: 30px;
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .fill-title {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 49%;
+
+            .fill {
+                width: 100%;
+                min-height: 30px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .checkbox-shop-detail {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.order-payment {
+    width: 28%;
+    margin-bottom: 15px;
+    h3 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .order-total {
+        background-color: white;
+
+        .selected-products {
+            font-size: 18px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .product-price {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.payment-shop-details {
+    .title-payment {
+        margin: 10px 0;
+    }
+
+    .payment-body {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: white;
+        padding: 30px;
+
+        .checkbox-payment {
+            display: flex;
+            gap: 15px;
+        }
+        button {
+            background-color: $yellow-color;
+            padding: 15px;
+        }
+    }
+
+}

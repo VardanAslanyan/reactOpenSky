@@ -1,0 +1,54 @@
+.footer-component {
+    h4 {
+        font-size: 30px;
+        font-weight: 300;
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3D464D;
+}
+
+
+.social {
+    font-size: 25px;
+    color: #FFD333; 
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    .contact-data {
+        display: flex;
+        .contact-icons {
+            font-size: 20px;
+            color: #FFD333;
+        }
+        p {
+            margin-left: 5px;
+        }
+    }
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    .social {
+        margin-left: 15px;
+    }
+    .input-sign-up {
+        padding: 5px;
+    }
+    .sign-up-btn {
+        background-color: #FFD333;
+        padding: 5px;
+    }
+}

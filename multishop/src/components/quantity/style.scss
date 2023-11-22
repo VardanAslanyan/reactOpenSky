@@ -1,0 +1,21 @@
+@import 'src/assets/style/variables.scss';
+
+.quantity {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    .symbol {
+        text-align: center;
+        display: block;
+        background-color: $yellow-color;
+        width: 33%;
+        height: 30px;
+        cursor: pointer;
+    }
+    .count-to {
+        width: 33%;
+        height: 30px;
+        text-align: center;
+        background-color: #F5F5F5;
+    }
+}

@@ -1,0 +1,57 @@
+@import 'src/assets/style/variables.scss';
+
+.Shop {
+    h2 {
+        font-size: 25px;
+    }
+
+    .filer-by-price {
+        width: 100%;
+
+    }
+
+    .prices-filter {
+        font-size: 18px;
+        background-color: white;
+        padding: 10px 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .choose-filter-price {
+        display: flex;
+        gap: 10px;
+    }
+
+}
+
+
+
+
+.shop-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    .shop-left {
+        width: 20%;
+    }
+
+    .products {
+        width: 77%;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        .link-to-shop-details {
+            width: calc(33% - 6.8px);
+            text-decoration: none;
+        }
+    }
+}
+
+
+.home-contact {
+    background-color: white;
+    margin: 10px 0;
+}

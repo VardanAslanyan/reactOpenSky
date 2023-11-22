@@ -1,0 +1,62 @@
+@import 'src/assets/style/variables.scss';
+
+
+.shop-ditail-main {
+    display: flex;
+    justify-content: space-between;
+
+    .product-detail {
+        width: 40%;
+        min-height: 563px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .shop-detail-description {
+        background-color: white;
+        padding: 30px;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .product-amount {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .sizes {
+            display: flex;
+            gap: 15px;
+
+            label {
+                gap: 5px;
+                display: flex;
+            }
+        }
+        .add-remove {
+            display: flex;
+            gap: 15px;
+            .add-to-cart {
+                background-color: $yellow-color;
+                padding: 5px;
+                display: flex;
+                gap: 10px;
+                cursor: pointer;
+            }
+        }
+
+    }
+    
+}
+
+.you-may-also {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 15px;
+}

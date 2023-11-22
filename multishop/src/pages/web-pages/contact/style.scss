@@ -1,0 +1,72 @@
+@import 'src/assets/style/variables.scss';
+
+.home-contact {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .contact-span {
+        color:grey;
+    }
+}
+
+.contact-info {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.contect-left {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 15px;
+    input {
+        border: 0.5px solid black;
+        padding: 5px;
+    }
+    textarea {
+        border: 0.5px solid black;
+        padding: 5px;
+        height: 30vh;
+    }
+    .contact-left-btn {
+        padding: 10px;
+        width: 150px;
+        background-color: $yellow-color;
+        &:hover {
+            background-color: #ad9748;
+        }
+    }
+}
+
+.contact-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.google-map {
+    padding: 30px;
+    background-color: white;
+}
+
+.google-map iframe {
+    height: 50vh;
+    width: 100%;
+}

@@ -1,10 +1,20 @@
 import './App.css';
-import Header from './components/header';
+import './assets/style/index.scss'
+
+import GuestComponent from './components/guest';
+import AuthComponent from './components/auth';
+
+
 
 function App() {
+
+
+  let token = localStorage.getItem('token')
+
+
   return (
     <div className="App">
-      <Header/>
+      {token ? <AuthComponent /> : <GuestComponent />}
     </div>
   );
 }

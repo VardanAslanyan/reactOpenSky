@@ -1,0 +1,59 @@
+.offer-component {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    p {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    button {
+        color: black;
+        background-color: #FFD333;
+        width: 100px;
+        height: 40px;
+        font-weight: 400;
+        &:hover {
+            background-color: #c3a960;
+        }
+    }
+}
+
+
+.offer-component-big {
+    width: 50%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    p {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    button {
+        color: black;
+        background-color: #FFD333;
+        width: 100px;
+        height: 40px;
+        font-weight: 400;
+        &:hover {
+            background-color: #c3a960;
+        }
+    }
+}

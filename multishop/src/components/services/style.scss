@@ -1,0 +1,16 @@
+.service {
+    display: flex;
+    width: calc(25% - 15px);
+    height: 130px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: #FFD333;
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
